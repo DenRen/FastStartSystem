@@ -1,0 +1,33 @@
+alias t='trans :ru -b'
+alias ta='trans :ru'
+alias new='cd $(~/1/new.sh); vim main.cpp'
+alias r='
+        echo "Reboot? [Y/n]"
+        read resp
+        case $resp in [yY][eE][sS]|[Yy])
+                reboot
+        esac
+'
+alias slp='               
+        echo "Sleep? [Y/n]"
+        read resp
+        case $resp in [yY][eE][sS]|[Yy])
+                echo sleep
+                #systemctl suspend
+        esac
+'
+alias q='exit'
+alias b='loginctl lock-session'
+alias c='clear'
+alias m='make'
+
+alias й='q'
+alias ы='s'
+alias и='b'
+
+alias uu='sudo apt update && sudo apt upgrade'
+
+#source /opt/ros/melodic/setup.zsh
+#source ~/Projects/ROS/work_1/catkin_ws/devel/setup.zsh
+#export PATH="$HOME/STM32CubeMX:$PATH"
+#export PATH="/opt/matlab/bin:$PATH"
