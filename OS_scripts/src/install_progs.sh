@@ -93,13 +93,13 @@ set_aliases_for_bash_zsh () {
     local name="Set aliases for bash and zsh"
     local name_baserc=".basebashrc"
     
-    local path_folder="/home/$USER"
+    local path_folder="$HOME"
 
     # Not change this tab
     # It's special tab = 0
     local bash_add_cmd="
 # Include personal aliases;\n
-source $name_baserc";
+source $path_folder/$name_baserc";
     
     local cmd='
     cp "$(dirname $0)/$name_baserc" "$path_folder/$name_baserc";
