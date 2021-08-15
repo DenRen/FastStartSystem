@@ -1,5 +1,17 @@
-alias t='trans :ru -b'
-alias ta='trans :ru'
+MyTranslate () {
+	type=$1
+
+	shift 1
+	string="${@}"	
+
+	if [[ "$type" == "short" ]]; then
+		trans :ru -b "${string}"
+	elif [[ "$type" == "long" ]]; then
+		trans :ru "${string}"
+	fi
+}
+alias t='MyTranslate short'
+alias ta='MyTranslate long'
 alias new='cd $(~/1/new.sh); vim main.cpp'
 alias r='
         echo "Reboot? [Y/n]"
@@ -25,7 +37,7 @@ alias й='q'
 alias ы='s'
 alias и='b'
 
-alias uu='sudo apt update && sudo apt upgrade -y'
+alias uu='sudo apt update && sudo apt upgrade'
 
 #source /opt/ros/melodic/setup.zsh
 #source ~/Projects/ROS/work_1/catkin_ws/devel/setup.zsh
