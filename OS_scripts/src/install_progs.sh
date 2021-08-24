@@ -92,6 +92,7 @@ install_zsh () {
 set_aliases_for_bash_zsh () {
     local name="Set aliases for bash and zsh"
     local name_baserc=".basebashrc"
+    local name_vimrc=".vimrc"
     
     local path_folder="$HOME"
 
@@ -103,7 +104,8 @@ source $path_folder/$name_baserc";
     
     local cmd='
     cp "$(dirname $0)/$name_baserc" "$path_folder/$name_baserc";
-
+    cp "$(dirname $0)/$name_vimrc" "$path_folder/$name_vimrc";
+    
     echo "$bash_add_cmd" >> $path_folder/.bashrc;
     echo "$bash_add_cmd" >> $path_folder/.zshrc;'
 
