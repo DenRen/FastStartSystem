@@ -1,5 +1,5 @@
 function! MyBallonExpr()
-	return system("t ". v:beval_text)
+	return system("trans :ru -b ". v:beval_text)
 endfunction
 
 set bexpr=MyBallonExpr()
