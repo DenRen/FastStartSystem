@@ -37,8 +37,13 @@ alias й='q'
 alias ы='s'
 alias и='b'
 
-alias uu='sudo apt update && sudo apt upgrade'
-alias uuu='uu && sudo apt autoremove'
+alias uu='sudo apt-get update && sudo apt-get upgrade'
+alias uuu='uu && sudo apt-get autoremove'
+
+alias uuy='uu -y'
+alias uuuy='uuy && sudo apt-get autoremove -y'
+
+alias uuue='uuuy && exit'
 
 #source /opt/ros/melodic/setup.zsh
 #source ~/Projects/ROS/work_1/catkin_ws/devel/setup.zsh
