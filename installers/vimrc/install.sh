@@ -22,9 +22,10 @@ curl -fLo ~/.vim/autoload/plug.vim \
      --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install all necessaries programms
-sudo apt install -y ripgrep fzf
+sudo apt install -y ripgrep fzf nodejs
 
 cp "${CURRENT_DIR}"/.vimrc ~/.vimrc
 ln -s ~/.vimrc ~/.gvimrc
 
-echo "\nEnter in all vims (vim, nvim, gvim) :PlugInstall"
+echo
+echo "Enter in all vims (vim, nvim, gvim) :PlugInstall"
