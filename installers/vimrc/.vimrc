@@ -6,13 +6,13 @@ Plug 'junegunn/fzf.vim'
 " NERDTree - быстрый просмотр файлов
 Plug 'preservim/nerdtree'
 " Сoc - автодополнение 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Дополнения для NERDTree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'scrooloose/nerdcommenter'
 " Дополнение для Git, а также иконки для NERDTree
-Plug 'airblade/vim-gitgutter'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'ryanoasis/vim-devicons'
 " Линия статуса
 Plug 'itchyny/lightline.vim'
 " Темы
@@ -82,3 +82,6 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++17 -Wall'
