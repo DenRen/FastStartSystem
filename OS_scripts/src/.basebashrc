@@ -49,3 +49,6 @@ alias uuue='uuuy && exit'
 #source ~/Projects/ROS/work_1/catkin_ws/devel/setup.zsh
 #export PATH="$HOME/STM32CubeMX:$PATH"
 #export PATH="/opt/matlab/bin:$PATH"
+
+EDITOR=nvim # For mc
+PAGER=nvim # For mc
